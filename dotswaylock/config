@@ -2,4 +2,4 @@
 #file on path: ~/.swaylock/config
 
 color=000000
-image=$HOME/.config/wallpaper_lock.jpg
+image=$HOME/.local/share/backgrounds/wallpaper_lock.jpg

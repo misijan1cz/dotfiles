@@ -9,8 +9,11 @@ single_offs="1 2 3 4 5 6 7"
 
 arg=$1
 
-echo $arg
-if [ "$arg" = "full" ]; then 
+if [ "$arg" = "" ]; then
+	for i in $all_cores; do
+		echo -e "cpu $i: $(cat /sys/devices/system/cpu/cpu$i/online)"
+		done
+elif [ "$arg" = "full" ]; then 
 	for i in $all_cores; do echo 1 | sudo tee /sys/devices/system/cpu/cpu$i/online; done
 	echo "cpu: full - all cores up"
 elif [ "$arg" = "big" ]; then
