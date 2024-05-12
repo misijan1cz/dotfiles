@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [[ $1 == "help" ]]
+then
+	echo "Script to configure the system"
+	exit 1
+fi
+
 username=$(id -u -n 1000)
 dotfiles_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 

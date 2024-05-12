@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [[ $1 == "help" ]]
+then
+	echo "Script to copy existing configuration."
+	exit 0
+fi
+
 dir_conf=(sway waybar wofi foot gammastep mako)
 fil_conf=(wal_* wallpaper* user-dirs.dirs)
 fil_bins=(bluetuith bluetuith-LICENSE cpu sway-save-outputs)
