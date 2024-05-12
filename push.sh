@@ -6,6 +6,7 @@ then
 	exit 0
 fi
 
+git pull
 bash snapshot.sh
 git add *
 git commit -m "$(date +%d.%m.%Y)"
