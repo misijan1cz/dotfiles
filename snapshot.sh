@@ -12,7 +12,7 @@ fil_bins=(bluetuith bluetuith-LICENSE cpu sway-save-outputs)
 dir_shre=(fonts backgrounds)
 fil_swlk=(config config.bak.effects)
 
-mkdir ./configs
+mkdir dotconfigs
 cp ~/.vimrc ./configs/dotvimrc
 # also in configs: NetworkManager.conf sources.list wpa_supplicant.conf
 
