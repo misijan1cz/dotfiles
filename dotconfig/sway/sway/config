@@ -81,7 +81,8 @@ input "type:touchpad" {
 	# enable tap to click
 	tap enable
 	natural_scroll enable
-	scroll_factor 0.5
+	scroll_factor 0.65
+	pointer_accel 0.53
 }
 
 ### MODE: Resize ###
@@ -254,8 +255,8 @@ bindsym {
 	# Workspaces:
 	$mod+Prior exec "/home/$usr/.config/sway/switch_workspace.sh switch prev"
 	$mod+Next exec "/home/$usr/.config/sway/switch_workspace.sh switch next"
-	$mod+Shift+Prior exec "/home/$usr/.config/sway/switch_workspace.sh moveto prev"
-	$mod+Shift+Next exec "/home/$usr/.config/sway/switch_workspace.sh moveto next"
+	$mod+Shift+Prior exec "/home/$usr/.config/sway/switch_workspace.sh move prev"
+	$mod+Shift+Next exec "/home/$usr/.config/sway/switch_workspace.sh move next"
 
 	# Tiling vs floating mode
 	 $mod+Shift+space floating toggle
