@@ -250,8 +250,8 @@ bindsym {
 	 
 	 $mod+Prior exec $switch-workspace switch prev
 	 $mod+Next exec $switch-workspace switch next
-	 $mod+Shift+Prior $switch-workspace move prev
-	 $mod+Shift+Next $switch-workspace move next
+	 $mod+Shift+Prior exec $switch-workspace move prev
+	 $mod+Shift+Next exec $switch-workspace move next
 
 	# Modes
 	 $mod+a mode $mode_select
