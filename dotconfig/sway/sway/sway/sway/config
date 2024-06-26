@@ -33,7 +33,7 @@ for_window {
 }
 
 ### Styling ###
-output * bg /home/$usr/.local/share/backgrounds/wallpaper.jpg fill
+output * bg /home/$usr/.config/wallpaper.jpg fill
 #output * bg #000000 solid_color
 gaps inner 0
 gaps outer 0
@@ -67,7 +67,7 @@ input * {
 
 input "type:pointer" {
   #accel_profile flat
-  pointer_accel 0
+  pointer_accel 0.8
 }
 
 input "type:touchpad" {

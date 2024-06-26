@@ -10,7 +10,7 @@ dir_conf=(sway waybar wofi foot gammastep mako nvim)
 fil_conf=( user-dirs.dirs)
 fil_bins=(bluetuith bluetuith-LICENSE cpu sway-save-outputs)
 dir_shre=(fonts backgrounds)
-fil_swlk=(config config.bak.effects)
+fil_swlk=(config config.template)
 
 mkdir dotconfigs
 cp ~/.vimrc ./configs/dotvimrc
@@ -52,4 +52,6 @@ fil_snapshot ~/.config		dotconfig		${fil_conf[@]}
 fil_snapshot ~/.local/bin	dotlocal/bin	${fil_bins[@]}
 dir_snapshot ~/.local/share	dotlocal/share	${dir_shre[@]}
 fil_snapshot ~/.swaylock	dotswaylock		${fil_swlk[@]}
+bash install.sh
+bash set_colorscheme.sh
 

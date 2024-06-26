@@ -1,0 +1,41 @@
+#swaylock-effects
+#file on path: ~/.swaylock/config
+
+# Swaylock-effects only
+indicator
+clock
+#effect-blur=8x8
+#screenshots
+
+# Swaylock only
+#color=000000
+image=$HOME/.local/share/backgrounds/wallpaper_lock.jpg
+
+# General theming
+hide-keyboard-layout
+line-uses-inside
+indicator-radius=70
+indicator-thickness=5
+indicator-idle-visible
+# ...color: blue-light
+ring-color=(COL_TEXT_LIGHT)
+ring-clear-color=(COL_TEXT_LIGHT)
+ring-caps-lock-color=(COL_TEXT_LIGHT)
+ring-ver-color=(COL_TEXT_LIGHT)
+text-color=(COL_TEXT_LIGHT)
+text-clear-color=(COL_TEXT_LIGHT)
+text-caps-lock-color=(COL_TEXT_LIGHT)
+text-ver-color=(COL_TEXT_LIGHT)
+# ...color: red-light
+ring-wrong-color=(COL_WARN_LIGHT)
+text-wrong-color=(COL_WARN_LIGHT)
+# ...color: blue-dark
+key-hl-color=(COL_TEXT_DARK)
+separator-color=(COL_TEXT_DARK)
+# ...color: red-dark
+# ...color: background-dark
+inside-color=(COL_BACK_TRANS)
+inside-clear-color=(COL_BACK_TRANS)
+inside-caps-lock-color=(COL_BACK_TRANS)
+inside-ver-color=(COL_BACK_TRANS)
+inside-wrong-color=(COL_BACK_TRANS)
