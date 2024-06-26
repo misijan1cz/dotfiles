@@ -21,14 +21,21 @@ set $volume-up bash '/home/$usr/.config/sway/volume-up.sh' 100
 set $radio-toggle bash '/home/$usr/.config/sway/radio-toggle.sh'
 
 ### Scratchpad ###
-set $term_scp $term --app-id=index_term
-set $term_scp_id index_term
+set $term_scp $term --app-id=scratchpad_term
+set $term_scp_id scratchpad_term
+set $note_scp $term --app-id=scratchpad_note nvim "/home/$usr/Documents/sync/Notes/index.md"
+set $note_scp_id scratchpad_note
 for_window {
 	# Scratchpad terminal
   	 [app_id=$term_scp_id] {
 		move to scratchpad
 		[app_id=$term_scp_id] scratchpad show
 		$t_pos
+	 }
+	 [app_id=$note_scp_id] {
+		move to scratchpad
+		[app_id=$note_scp_id] scratchpad show
+		$n_pos
 	 }
 }
 
@@ -67,14 +74,15 @@ input * {
 
 input "type:pointer" {
   #accel_profile flat
-  pointer_accel 0
+  pointer_accel 0.8
 }
 
 input "type:touchpad" {
 	# enable tap to click
 	tap enable
 	natural_scroll enable
-	scroll_factor 0.5
+	scroll_factor 0.65
+	pointer_accel 0.53
 }
 
 ### MODE: Resize ###
@@ -167,6 +175,7 @@ mode $mode_select {
 bindsym {
 	# Scratchpad terminal
 	 $mod+Tab exec swaymsg [app_id=$term_scp_id] scratchpad show || exec $term_scp ,  $t_pos
+	 $mod+Shift+Tab exec swaymsg [app_id=$note_scp_id] scratchpad show || exec $note_scp ,  $n_pos
 	 $mod+Shift+s exec $lockman
 	 $mod+Shift+f exec MOZ_ENABLE_WAYLAND=1 firefox
 
@@ -242,6 +251,13 @@ bindsym {
 	 $mod+w layout tabbed
 	 $mod+e layout toggle split
 	 $mod+f fullscreen
+
+	# Workspaces:
+	$mod+Prior exec "/home/$usr/.config/sway/switch_workspace.sh switch prev"
+	$mod+Next exec "/home/$usr/.config/sway/switch_workspace.sh switch next"
+	$mod+Shift+Prior exec "/home/$usr/.config/sway/switch_workspace.sh move prev"
+	$mod+Shift+Next exec "/home/$usr/.config/sway/switch_workspace.sh move next"
+
 	# Tiling vs floating mode
 	 $mod+Shift+space floating toggle
 	# Move focus to the parent container
@@ -311,8 +327,8 @@ bar {
 }
 
 bindgesture {
-	swipe:right workspace prev
-	swipe:left workspace next
+	swipe:right workspace prev_on_output
+	swipe:left workspace next_on_output
 	swipe:up  fullscreen
 	swipe:down fullscreen
 }

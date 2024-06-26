@@ -41,7 +41,6 @@ require("obsidian").setup({
       path = "~/Documents/sync/Notes",
       },
     },
-	disable_frontmatter = true,
 	})
 
 vim.schedule(function()
@@ -49,4 +48,3 @@ vim.schedule(function()
 end)
 
 vim.opt_local.conceallevel = 2
-vim.opt_local.relativenumber = true

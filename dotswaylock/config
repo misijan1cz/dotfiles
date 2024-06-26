@@ -1,5 +1,31 @@
 #swaylock-effects
 #file on path: ~/.swaylock/config
 
-color=000000
-image=$HOME/.local/share/backgrounds/wallpaper_lock.jpg
+indicator
+clock
+effect-blur=8x8
+screenshots
+hide-keyboard-layout
+line-uses-inside
+#blue-light
+ring-color=cdd6f4
+ring-clear-color=cdd6f4
+ring-caps-lock-color=cdd6f4
+ring-ver-color=cdd6f4
+text-color=cdd6f4
+text-clear-color=cdd6f4
+text-caps-lock-color=cdd6f4
+text-ver-color=cdd6f4
+#red-light
+ring-wrong-color=4974a5
+text-wrong-color=4974a5
+#blue-dark
+key-hl-color=f4cdd6
+separator-color=f4cdd6
+#red-dark
+#background-dark
+inside-color=00000050
+inside-clear-color=00000050
+inside-caps-lock-color=00000050
+inside-ver-color=00000050
+inside-wrong-color=00000050

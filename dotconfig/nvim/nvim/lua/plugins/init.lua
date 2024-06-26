@@ -61,7 +61,8 @@ return {
 			path = "~/Documents/sync/Notes",
 		  },
 		},
-		disable_frontmatter = true,
+
+		-- see below for full list of options 👇
 	  },
 	}
 }
