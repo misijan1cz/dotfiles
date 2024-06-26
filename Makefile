@@ -14,5 +14,8 @@ set-colorscheme:
 
 set: set-colorscheme
 
+help:
+	@echo -e "install \t... repo -> local\nsync, snapshot \t... local -> repo\n\nset, set-colorscheme \t... generate config files from templates\npush \t... take snapshot and push to git"
+
 @PHONY: push snapshot sync install set-colorscheme set
 
