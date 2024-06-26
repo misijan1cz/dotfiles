@@ -28,7 +28,7 @@ function dir_snapshot () {
 	while [[ $# -gt 0 ]]
 	do
 		echo "$1"
-		cp -r $indir/$1 ./$outdir/$1
+		cp -r $indir/$1 ./$outdir/
 		shift 1
 	done
 }
