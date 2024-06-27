@@ -24,5 +24,5 @@ done
 cp "$maindir/templates/foot.ini.foot-template" "/home/$username/.config/foot/foot.ini"
 for (( i=0; i<${#COL_SCHEME_NAMES[@]}; i++ ))
 do
-	sed -i "s/(${COL_SCHEME_NAMES[$i]})/${COL_SCHEME_COLOR[$i]}/g" "/home/$username/.config/foot.ini"
+	sed -i "s/(${COL_SCHEME_NAMES[$i]})/${COL_SCHEME_COLOR[$i]}/g" "/home/$username/.config/foot/foot.ini"
 done
