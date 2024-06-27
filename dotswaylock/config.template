@@ -34,8 +34,8 @@ key-hl-color=(COL_TEXT_DARK)
 separator-color=(COL_TEXT_DARK)
 # ...color: red-dark
 # ...color: background-dark
-inside-color=(COL_BACK_TRANS)
-inside-clear-color=(COL_BACK_TRANS)
-inside-caps-lock-color=(COL_BACK_TRANS)
-inside-ver-color=(COL_BACK_TRANS)
-inside-wrong-color=(COL_BACK_TRANS)
+inside-color=(COLA_BACK)
+inside-clear-color=(COLA_BACK)
+inside-caps-lock-color=(COLA_BACK)
+inside-ver-color=(COLA_BACK)
+inside-wrong-color=(COLA_BACK)

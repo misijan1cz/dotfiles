@@ -9,7 +9,7 @@ fi
 username=$(id -u -n 1000)
 dotfiles_dir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-echo "Running ditfiles install from $dotfiles_dir"
+echo "Running dotfiles install from $dotfiles_dir"
 
 # Copy config files
 mkdir -p /home/$username/.config
