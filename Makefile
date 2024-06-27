@@ -21,7 +21,7 @@ help:
 
 i: install
 s: sync
-c: set-color
+c: set-colorscheme
 p: push
 
 @PHONY: push snapshot sync install set-colorscheme set

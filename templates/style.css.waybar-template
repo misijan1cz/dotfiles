@@ -11,7 +11,7 @@
 
 window#waybar {
     background-color: rgba((RGBA_BACK));
-    border: 1px solid #(COL_TEXT_LIGHT);
+    border: 1px solid #(COL_TEXT_DARK);
     color: #(COL_TEXT_LIGHT);
     transition-property: background-color;
     transition-duration: .5s;
