@@ -10,7 +10,7 @@ dir_conf=(sway waybar wofi foot gammastep mako nvim)
 fil_conf=(user-dirs.dirs)
 fil_bins=(bluetuith bluetuith-LICENSE cpu sway-save-outputs)
 dir_shre=(fonts backgrounds)
-fil_swlk=(config config.template)
+fil_swlk=(config)
 
 mkdir dotconfigs
 cp ~/.vimrc ./configs/dotvimrc
