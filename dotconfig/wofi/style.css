@@ -1,18 +1,17 @@
 *{
-	border-radius: 3px;
 	border: none;
 }
 
 window {
-	font-size: 28px;
-	font-family: "Roboto Mono Medium", sans-serif;
-	background-color: rgba(50, 50, 50, 0.9);
+	font-size: 18px;
+	font-family: "Jet Brains Mono Nerd Font", sans-serif;
+	background-color: rgba(0, 0, 0, 0.5);
 	color: #ffffff;
 	border-bottom: 3px solid white; 
 }
 
 #entry{
-	padding: .25em;
+	padding: 0.15em;
 }
 
 #entry:selected {
@@ -28,10 +27,10 @@ window {
 #input {
 	background-color: rgba(50, 50, 50, 0.5);
 	color: #ffffff;
-	padding: .25em;
+	padding: .15em;
 }
 
 image{
-	margin-left: .25em;
-	margin-right: .25em;
+	margin-left: .15em;
+	margin-right: .15em;
 }

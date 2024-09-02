@@ -11,7 +11,7 @@ set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wofi --exec-search --gtk-dark --lines 10 --show drun
+set $menu wmenu-run -f 'JetBrainsMonoNerdFont 10' -N '#000000' -s '#000000' -S '#cdd6f4' -n '#cdd6f4'
 set $files-gui thunar
 set $files-tui mc
 # Advanced
@@ -67,15 +67,15 @@ input * {
 }
 
 input "type:pointer" {
-  #accel_profile flat
-  pointer_accel 0.8
+  accel_profile adaptive
+  pointer_accel 1
 }
 
 input "type:touchpad" {
 	# enable tap to click
 	tap enable
 	natural_scroll enable
-	scroll_factor 0.5
+	scroll_factor 0.6
 }
 
 ### MODE: Resize ###
