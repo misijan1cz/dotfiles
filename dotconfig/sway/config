@@ -11,7 +11,7 @@ set $down j
 set $up k
 set $right l
 set $term foot
-set $menu wmenu-run -f 'JetBrainsMonoNerdFont 10' -N '#000000' -s '#000000' -S '#cdd6f4' -n '#cdd6f4'
+set $menu wmenu-run -f 'JetBrainsMonoNerdFont 10' -N '#000000' -s '#000000' -S '#cdd6f4' -n '#cdd6f4' | xargs swaymsg exec --
 set $files-gui thunar
 set $files-tui mc
 # Advanced

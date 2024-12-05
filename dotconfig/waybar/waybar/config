@@ -22,7 +22,7 @@
     "modules-right": ["pulseaudio#reduced", "custom/separator", "network", "custom/separator", "backlight", "custom/gammastep", "custom/separator", "sway/language", "hyprland/language", "custom/separator", "battery#reduced", "custom/separator", "clock", "tray"],
     
 	// Center and right
-	"modules-center": ["hyprland/submap", "sway/mode", "mpris"],
+	"modules-center": ["sway/mode", "mpris"],
     
 //----------------------------------
 // Modules configuration
@@ -39,12 +39,7 @@
 	"hyprland/language": {
 		"format": "{}",
 		"format-cs": "cs",
-		"format-cs-qwerty": "cs:qrty",
-		"format-cs-coder": "cs:code",
 		"format-en": "en"
-	},
-	"hyprland/submap": {
-		"format": "<u><b>{} </b></u>"
 	},
     "idle_inhibitor": {
         "format": "{icon}",
