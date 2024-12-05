@@ -6,7 +6,7 @@ then
 	exit 0
 fi
 
-dir_conf=(sway waybar wofi foot gammastep mako nvim)
+dir_conf=(sway waybar wofi foot gammastep mako nvim hypr)
 fil_conf=(user-dirs.dirs)
 fil_bins=(bluetuith bluetuith-LICENSE cpu sway-save-outputs)
 dir_shre=(fonts backgrounds)
